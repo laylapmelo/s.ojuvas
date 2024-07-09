@@ -1,0 +1,376 @@
+body {
+  background-color: white;
+  color: #282828;
+}
+.cabecalho {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  border-bottom: 1px solid rgb(0, 102, 255);
+}
+.cabecalho .logo {
+  display: flex;
+  gap: 15px;
+}
+.cabecalho .menu {
+  display: flex;
+  gap: 30px;
+}
+.cabecalho .logo p {
+  align-items: center;
+  padding: 0 40px;
+}
+.cabecalho .logo img {
+  height: 40px;
+}
+.cabecalho .menu li a {
+  padding: 28px;
+  font-weight: bolder;
+  font-size: 15px;
+}
+.cabecalho .menu li a:hover {
+  border-bottom: 2px solid rgb(0, 102, 255);
+}
+.cabecalho .menu .btn-obter {
+  background-color: rgb(0, 102, 255);
+  border-radius: 5px;
+  color: white;
+  padding: 15px;
+}
+.cabecalho .menu .btn-obter:hover {
+  background-color: rgb(5, 49, 116);
+  border: 1px solid rgb(0, 102, 255);
+}
+.home {
+  display: flex;
+  position: relative;
+  min-height: calc(100vh - 80px);
+}
+.home .img-fundo {
+  width: 100%;
+  object-fit: cover;
+}
+.home .historia {
+  position: absolute;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  padding: 80px 80px 80px 170px;
+  max-width: 780px;
+}
+.home .historia .icons {
+  display: flex;
+  gap: 32px;
+}
+.home .historia .icons img {
+  max-width: 120px;
+}
+.home .historia  p {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.home .historia .titulo {
+  font-size: 40px;
+}
+.informacoes {
+  display: flex;
+  position: relative;
+  min-height: calc(100vh - 80px);
+  align-items: center;
+  justify-content: center;
+}
+.informacoes img {
+  width: 100%;
+  object-fit: cover;
+}
+.informacoes .caracteristica {
+  position: absolute;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  gap: 32px;
+  align-items: center;
+}
+.informacoes .caracteristica .titulo {
+  margin-top: -70px;
+}
+.informacoes .caracteristica p {
+  width: 700px;
+  padding: 100px;
+  text-align: center;
+  margin-top: -100px;
+}
+.container {
+  gap: 10px;
+  position: absolute;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr); /* Adjust rows as needed */
+  grid-template-columns: repeat(3, 1fr); /* Adjust columns as needed */
+  /* Optional: Center content within grid cells */
+  flex-direction: column;
+  align-items: center;
+}
+
+.container div {
+  gap: 32px;
+  width: 250px;
+  height: 250px;
+  background-color: #eee; /* Set a default background color */
+  border-radius: 5px; /* Add rounded corners for a nicer look */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.container .seguranca {
+  margin-top: -50px;
+  font-size: 15px;
+  text-align: center;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.container .app {
+  font-size: 15px;
+  margin-top: -50px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.05);
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.container .nuvem {
+  margin-top: -50px;
+  font-size: 14.5px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.05);
+  grid-row: 3;
+  grid-column: 3;
+}
+.container div img {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+}
+.container div h2 {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.container div p {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.comparar {
+  display: flex;
+  position: relative;
+  min-height: calc(100vh - 80px);
+  align-items: center;
+  justify-content: center;
+}
+.comparar img {
+  width: 100%;
+  object-fit: cover;
+}
+.comparar .comparativo {
+  gap: 42px;
+  position: absolute;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr; /* Adjust rows as needed */
+  grid-template-columns: 1fr 1fr; /* Adjust columns as needed */
+  align-items: center;
+  padding: 80px 80px 80px 170px;
+  max-width: 900px;
+}
+.comparar .comparativo .slider{
+  grid-row: 1;
+  grid-column: 2;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+.slides{
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+.slides input{
+  display: none;
+}
+.slide{
+  width: 25%;
+  position: relative;
+  transition:2s ;
+}
+.manual-nav{
+  position:absolute;
+  width: 500px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.manual-btn{
+  border: 1px solid rgb(0, 102, 255); 
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.manual-btn:not(:last-child){
+  margin-right: 30px;
+}
+.manual-btn:hover{
+  border: 1px solid rgb(0, 102, 255); 
+  background-color: rgb(0, 102, 255);
+}
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+.navigation div{
+  border: 1px solid rgb(0, 102, 255);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.navigation{
+  position: absolute;
+  width: 500px;
+  margin-top: 500px;
+  display: flex;
+  justify-content: center;
+}
+.navigation div:not(:last-child){
+  margin-right: 30px;
+}
+#radio1:checked ~ .navigation .auto-btn1{
+  background-color: rgb(0, 102, 255);
+}
+#radio2:checked ~ .navigation .auto-btn2{
+  background-color: rgb(0, 102, 255);
+}
+
+
+
+
+.comparar .comparativo .text {
+  background-color: white;
+  align-items: start !important;
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.comparar .comparativo .text h2 {
+  margin-bottom: 32px;
+}
+.vant{
+  display: flex;
+  position: relative;
+
+}
+.vant .img-fundo {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+.vant .desv {
+  gap: 42px;
+  position: absolute;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr; /* Adjust rows as needed */
+  grid-template-columns: 1fr 1fr; /* Adjust columns as needed */
+  align-items: start;
+  padding: 80px 80px 80px 170px;
+  max-width: 900px;
+}
+.v{
+  display: flex;
+  height: 50px;
+}
+.v img{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.v h2{
+  align-items: center;
+  justify-items: center;
+}
+.vantagem .text p  {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+footer{
+  background-color: #eee;
+  grid-template-rows: repeat(3, 1fr);
+  display: flex;
+  height: 400px;
+  justify-items: center;
+  align-items: center;
+}
+footer img{
+  padding:0px 60px ;
+  height: 100px;
+  width: 400px
+}
+.referencia{
+  width: 150%;
+  padding:0px 60px ;
+}
+.referencia h3{
+  margin-bottom: 20px;
+}
+.sobre h3{
+  margin-bottom: 20px;
+}
+.conclusao{
+  display: flex;
+  position: relative;
+
+}
+.conclusao img{
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+.conclusao .concl {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  padding: 80px 80px 80px 170px;
+  max-width: 780px;
+}
+.conclusao .concl  p {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.conclusao .concl h2 {
+  font-size: 30px;
+  width: 190px;
+  color: white;
+  background-color:rgb(5, 49, 116);
+  padding: 10px;
+  border-radius: 25px;
+}
