@@ -69,7 +69,7 @@ body {
 .home .historia .icons img {
   max-width: 120px;
 }
-.home .historia  p {
+.home .historia p {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
@@ -131,7 +131,7 @@ body {
   margin-top: -50px;
   font-size: 15px;
   text-align: center;
-
+  background-color: rgba(0, 0, 0, 0.05);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   grid-row: 3;
   grid-column: 1;
@@ -193,79 +193,76 @@ body {
   padding: 80px 80px 80px 170px;
   max-width: 900px;
 }
-.comparar .comparativo .slider{
+.comparar .comparativo .slider {
   grid-row: 1;
   grid-column: 2;
   width: 500px;
   height: 500px;
   overflow: hidden;
 }
-.slides{
+.slides {
   width: 400%;
   height: 400px;
   display: flex;
 }
-.slides input{
+.slides input {
   display: none;
 }
-.slide{
+.slide {
   width: 25%;
   position: relative;
-  transition:2s ;
+  transition: 2s;
 }
-.manual-nav{
-  position:absolute;
+.manual-nav {
+  position: absolute;
   width: 500px;
   margin-top: 100px;
   display: flex;
   justify-content: center;
 }
-.manual-btn{
-  border: 1px solid rgb(0, 102, 255); 
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-}
-.manual-btn:not(:last-child){
-  margin-right: 30px;
-}
-.manual-btn:hover{
-  border: 1px solid rgb(0, 102, 255); 
-  background-color: rgb(0, 102, 255);
-}
-#radio1:checked ~ .first{
-  margin-left: 0;
-}
-#radio2:checked ~ .first{
-  margin-left: -25%;
-}
-.navigation div{
+.manual-btn {
   border: 1px solid rgb(0, 102, 255);
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
   transition: 1s;
 }
-.navigation{
+.manual-btn:not(:last-child) {
+  margin-right: 30px;
+}
+.manual-btn:hover {
+  border: 1px solid rgb(0, 102, 255);
+  background-color: rgb(0, 102, 255);
+}
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+.navigation div {
+  border: 1px solid rgb(0, 102, 255);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.navigation {
   position: absolute;
   width: 500px;
   margin-top: 500px;
   display: flex;
   justify-content: center;
 }
-.navigation div:not(:last-child){
+.navigation div:not(:last-child) {
   margin-right: 30px;
 }
-#radio1:checked ~ .navigation .auto-btn1{
+#radio1:checked ~ .navigation .auto-btn1 {
   background-color: rgb(0, 102, 255);
 }
-#radio2:checked ~ .navigation .auto-btn2{
+#radio2:checked ~ .navigation .auto-btn2 {
   background-color: rgb(0, 102, 255);
 }
-
-
-
 
 .comparar .comparativo .text {
   background-color: white;
@@ -278,10 +275,9 @@ body {
 .comparar .comparativo .text h2 {
   margin-bottom: 32px;
 }
-.vant{
+.vant {
   display: flex;
   position: relative;
-
 }
 .vant .img-fundo {
   width: 100%;
@@ -298,27 +294,28 @@ body {
   align-items: start;
   padding: 80px 80px 80px 170px;
   max-width: 900px;
+  margin-left: 30px;
 }
-.v{
+.v {
   display: flex;
   height: 50px;
 }
-.v img{
+.v img {
   width: 40px;
   height: 40px;
   margin-right: 10px;
 }
-.v h2{
+.v h2 {
   align-items: center;
   justify-items: center;
 }
-.vantagem .text p  {
+.vantagem .text p {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 5px;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
-footer{
+footer {
   background-color: #eee;
   grid-template-rows: repeat(3, 1fr);
   display: flex;
@@ -326,27 +323,26 @@ footer{
   justify-items: center;
   align-items: center;
 }
-footer img{
-  padding:0px 60px ;
+footer img {
+  padding: 0px 60px;
   height: 100px;
-  width: 400px
+  width: 400px;
 }
-.referencia{
+.referencia {
   width: 150%;
-  padding:0px 60px ;
+  padding: 0px 60px;
 }
-.referencia h3{
+.referencia h3 {
   margin-bottom: 20px;
 }
-.sobre h3{
+.sobre h3 {
   margin-bottom: 20px;
 }
-.conclusao{
+.conclusao {
   display: flex;
   position: relative;
-
 }
-.conclusao img{
+.conclusao img {
   width: 100%;
   height: 450px;
   object-fit: cover;
@@ -360,7 +356,7 @@ footer img{
   padding: 80px 80px 80px 170px;
   max-width: 780px;
 }
-.conclusao .concl  p {
+.conclusao .concl p {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
@@ -370,7 +366,39 @@ footer img{
   font-size: 30px;
   width: 190px;
   color: white;
-  background-color:rgb(5, 49, 116);
+  background-color: rgb(5, 49, 116);
   padding: 10px;
   border-radius: 25px;
 }
+.video {
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  background-color: #eee;
+  align-items: center;
+  justify-content: center;
+}
+.video .video-cont{
+  width: 700px;
+  padding: 100px;
+  text-align: center;
+  margin-top: -100px;
+
+}
+.video .video-cont .video-text h2 {
+  text-align: center; 
+  padding-bottom: 32px;
+}
+.video .video-cont .video-text p{
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.video .video-cont video {
+  height: 400px;
+  width: 600px;
+}
+
